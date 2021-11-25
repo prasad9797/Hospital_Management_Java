@@ -1,0 +1,13 @@
+use hospitalmanagement database;
+
+create table patient(patientid int,fname varchar(20),lname varchar(20),gender varchar(20),dob varchar(20),bloodgrp varchar(10),phno1 varchar(10),phno2 varchar(10),email varchar(30),problem varchar(20),ward varchar(6),room varchar(6),address varchar(30),city varchar(20),password varchar(30),fees varchar(30),doa varchar(30),dol varchar(30));
+
+create table staff(staffid int,fname varchar(20),lname varchar(20),gender varchar(20),dob varchar(20),bloodgrp varchar(10),post varchar(20),phno1 varchar(10),phno2 varchar(10),email varchar(30),address varchar(30),city varchar(20),password varchar(30));
+
+create table ward(ward varchar(30),room varchar(30),id varchar(30));
+
+create table doctor(doctorid int,fname varchar(20),lname varchar(20),gender varchar(20),dob varchar(20),bloodgrp varchar(10),specility varchar(20),phno1 varchar(10),phno2 varchar(10),email varchar(30),address varchar(30),city varchar(20),password varchar(30));
+
+create table appoinment(slot varchar(10),date varchar(20),time varchar(20),day varchar(10),patientid varchar(10),doctorid varchar(10),doctorname varchar(20),patientname varchar(20));
+
+create table prescription(patientid varchar(10),medicinename varchar(20),quantity varchar(10),price varchar(10),total varchar(10));
